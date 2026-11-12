@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Política de privacidad · ARCANOVA : Idol Tarot</title>
+<style>
+:root{color-scheme:light dark;--bg:#fbf9ff;--fg:#26213a;--muted:#6a647e;--line:#e4def3;--accent:#6b58b0}
+@media (prefers-color-scheme:dark){:root{--bg:#0e0b24;--fg:#ece8f8;--muted:#9892b3;--line:#2b2550;--accent:#b8a8f0}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"Apple SD Gothic Neo","Noto Sans KR","Hiragino Sans","Noto Sans JP",sans-serif}
+main{max-width:720px;margin:0 auto;padding:32px 16px 64px}
+h1{font-size:1.6rem;margin:0 0 4px}h2{font-size:1.1rem;margin:32px 0 8px;color:var(--accent)}
+p,li{color:var(--fg)}small,.muted{color:var(--muted)}table{border-collapse:collapse;width:100%;font-size:.95rem}
+td,th{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+</style></head><body><main><nav class="muted" style="margin-bottom:16px"><a href="privacy.html">한국어</a> · <a href="privacy.en.html">English</a> · <a href="privacy.ja.html">日本語</a> · <b>Español</b></nav><h1>Política de privacidad</h1>
+<p class="muted">ARCANOVA : Idol Tarot · Vigente desde 2026-11-11</p>
+<p>정상현 (en adelante, “nosotros”) explica a continuación qué información trata la app “ARCANOVA : Idol Tarot” (la “App”).
+La App empieza con una cuenta de invitado (anónima). Solo si lo deseas puedes vincular un correo o una cuenta de Google (es necesario antes de comprar estrellas o la membresía). No recogemos tu nombre ni tu número de teléfono.</p>
+
+<h2>1. Información que tratamos y para qué</h2>
+<table>
+<tr><th>Información</th><th>Finalidad</th><th>Conservación</th></tr>
+<tr><td>ID de cuenta (un valor aleatorio que crea nuestro servidor al abrir la App por primera vez)</td><td>Vincular estrellas, membresía y photocards a tu cuenta</td><td>Hasta que lo borres (puedes hacerlo en los ajustes de la App)</td></tr>
+<tr><td>Correo y contraseña (si vinculas el inicio de sesión con correo)</td><td>Iniciar sesión y enviar códigos de verificación y de restablecimiento. Las contraseñas se guardan <b>solo como hash irreversible</b>, nunca en texto plano.</td><td>Hasta eliminar la cuenta</td></tr>
+<tr><td>ID y correo de tu cuenta de Google (si vinculas Google)</td><td>Iniciar sesión. Nunca recibimos tu contraseña de Google.</td><td>Hasta eliminar la cuenta</td></tr>
+<tr><td>Registros de seguridad del inicio de sesión (intentos fallidos, códigos en hash, número de envíos)</td><td>Evitar accesos no autorizados y el abuso del correo</td><td>Códigos 10 minutos; fallos hasta iniciar sesión con éxito o desbloquear</td></tr>
+<tr><td>Tu pregunta de tarot</td><td>Crear la lectura con IA. <b>No guardamos el texto original en nuestro servidor</b>; solo se usa para la solicitud. Solo queda un hash irreversible para detectar preguntas repetidas.</td><td>Hashes solo dentro de tus últimas 50 lecturas</td></tr>
+<tr><td>Resultados de lecturas (sin la pregunta), miembro y tirada elegidos</td><td>Volver a entregar un resultado si se corta la conexión</td><td>Últimas 50 por cuenta</td></tr>
+<tr><td>Usos de hoy, lecturas Despertar del mes, colección de photocards</td><td>Gestionar los límites gratuitos, por anuncios y de membresía; función de colección</td><td>Hasta su eliminación (los usos se reinician cada día/mes)</td></tr>
+<tr><td>Saldo de estrellas, estado de la membresía (fecha de vencimiento, renovación automática)</td><td>Ofrecer las ventajas de la suscripción. Nunca recibimos los datos de pago.</td><td>Hasta su eliminación</td></tr>
+<tr><td>Confirmación de anuncios con recompensa (ID de transacción)</td><td>Evitar recompensas duplicadas</td><td>Hasta su eliminación</td></tr>
+<tr><td>Estadísticas del servicio (número, coste y tiempo de respuesta por modelo)</td><td>Control de costes y gestión de incidencias. Datos agregados, sin ID de cuenta ni preguntas.</td><td>40 días</td></tr>
+</table>
+<p>Tu historial de lecturas (con preguntas), favoritas, miembro bias, ajustes de pantalla y de avisos se guardan <b>solo en este dispositivo</b> y nunca se nos envían. Se borran al eliminar la App.</p>
+
+<h2>2. Proveedores y transferencias internacionales</h2>
+<table>
+<tr><th>Destinatario</th><th>Datos</th><th>Finalidad</th></tr>
+<tr><td>Cloudflare, Inc. (EE. UU.)</td><td>La información guardada en el servidor (apartado 1)</td><td>Funcionamiento del servidor</td></tr>
+<tr><td>OpenRouter, Inc. (EE. UU.) y la empresa de modelos de IA a la que se conecta (una de Upstage (Corea del Sur), OpenAI, Anthropic, Google (EE. UU.), DeepSeek, Tencent (China), etc., según el miembro elegido)</td><td>Tu pregunta y las cartas sacadas</td><td>Crear lecturas (se envían con cada solicitud)</td></tr>
+<tr><td>Google LLC (EE. UU.) — AdMob</td><td>ID de publicidad, información del dispositivo, etc., según las políticas de Google</td><td>Mostrar anuncios con recompensa y confirmarla (solo cuando tocas para ver un anuncio)</td></tr>
+<tr><td>RevenueCat, Inc. (EE. UU.), Google Play, Apple</td><td>ID de cuenta, historial de compras</td><td>Suscripciones, compra de estrellas, restauración y verificación</td></tr>
+<tr><td>Resend (Plus Five Five, Inc., EE. UU.)</td><td>Correo, código de verificación</td><td>Enviar correos de verificación/restablecimiento (solo cuando los pides)</td></tr>
+<tr><td>Google LLC (EE. UU.) — Inicio de sesión con Google</td><td>Token de inicio de sesión emitido por Google</td><td>Verificar el inicio de sesión con Google (solo si lo eliges)</td></tr>
+</table>
+<p>Se aplican las políticas de conservación y entrenamiento de cada empresa de IA. No usamos modelos gratuitos que conserven o se entrenen con lo que escribes. Por favor, no incluyas datos personales o sensibles (nombres, contactos, números de identificación) en tus preguntas.</p>
+<p>Para las transferencias desde la UE, nos basamos en las garantías que ofrecen estos proveedores (como las cláusulas contractuales tipo o las decisiones de adecuación).</p>
+
+<h2>3. Anuncios</h2>
+<p>Los anuncios solo aparecen cuando tocas «Mira un anuncio y gana 1 estrella». Según tu región, te pediremos consentimiento para anuncios personalizados; si lo rechazas, se muestran anuncios no personalizados. Puedes restablecer tu ID de publicidad o desactivar los anuncios personalizados en los ajustes del dispositivo.</p>
+
+<h2>4. Avisos</h2>
+<p>El aviso de la «carta del día» se programa en tu dispositivo. No se envía ningún token push a nuestro servidor.</p>
+
+<h2>5. Tus derechos y eliminación</h2>
+<p>En la App, ve a <b>Ajustes → Privacidad → Eliminar mi cuenta y los datos del servidor</b> para borrar al instante la información guardada en nuestro servidor (estrellas, usos, resultados recientes, photocards, estado de la membresía, correo/Google vinculados). El historial del dispositivo se borra en Ajustes → Borrar todo el historial o al eliminar la App.
+Las suscripciones se cancelan aparte en los ajustes de suscripción de Google Play / App Store; puedes volver a vincular la membresía con «Restaurar compras» usando la misma cuenta de la tienda.
+Para otras solicitudes (acceso, rectificación, supresión, limitación, portabilidad, oposición), escríbenos al contacto de abajo.</p>
+
+<h2>6. Usuarios de la UE (RGPD)</h2>
+<p>Bases legales: ejecución de un contrato (lecturas, estrellas y membresía), interés legítimo (seguridad, prevención de abusos, estadísticas agregadas) y consentimiento (anuncios personalizados, cuando sea necesario). Puedes retirar tu consentimiento en cualquier momento y tienes derecho a presentar una reclamación ante la autoridad de protección de datos de tu país (en España, la Agencia Española de Protección de Datos).</p>
+
+<h2>7. Menores</h2>
+<p>La App no está dirigida a menores de 14 años (o de la edad mínima que exija tu país). Si sabemos que hemos tratado datos de un menor, los borraremos sin demora.</p>
+
+<h2>8. Seguridad</h2>
+<p>Usamos cifrado en tránsito (HTTPS), claves secretas solo en el servidor, permisos de acceso mínimos, no guardamos ni registramos las preguntas originales, contraseñas en hash y bloqueo temporal tras intentos fallidos.</p>
+
+<h2>9. Contacto</h2>
+<p>정상현 · findtruthmind@gmail.com</p>
+
+<h2>10. Cambios</h2>
+<p>Si esta política cambia, lo anunciaremos en esta página y en la App al menos 7 días antes de que entre en vigor.</p>
+<p class="muted">Los miembros de esta App son personajes virtuales hechos con IA, y las lecturas son contenido de autorreflexión.</p>
+<p class="muted">Esta página es una traducción del original en coreano. Si hay diferencias, prevalece la versión coreana, salvo que la ley local disponga otra cosa.</p></main></body></html>
