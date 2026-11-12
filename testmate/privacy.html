@@ -158,23 +158,23 @@
   <tr><td>メールアドレス、パスワード（暗号化して保存）</td><td>会員登録・ログイン時</td><td>アカウント確認、メール認証、パスワード再設定</td></tr>
   <tr><td>ニックネーム、テスター用Gmailアドレス</td><td>プロフィール作成時</td><td>チームメンバーへの名前の表示、公式テスターグループへの参加案内</td></tr>
   <tr><td>登録したアプリの情報（アプリ名、パッケージ名、紹介文、アイコン画像）、確認依頼の文章</td><td>アプリの登録・編集時</td><td>チームメンバーがアプリを見つけ、インストール・テストできるように表示</td></tr>
-  <tr><td>チーム参加・インストール・認証の記録、警告・完了の記録</td><td>チーム参加中とテスト中</td><td>14日間のテストの管理、チーム進捗の表示</td></tr>
-  <tr><td>認証スクリーンショット、ひとこと（意見）、アプリの利用時間（秒）、端末モデル・Androidバージョン</td><td>チームメンバーのアプリをテストして認証するとき</td><td>テストの実施確認、アプリの所有者へのフィードバック伝達</td></tr>
+  <tr><td>チーム参加・インストール・チェックインの記録、警告・完了の記録</td><td>チーム参加中とテスト中</td><td>14日間のテストの管理、チーム進捗の表示</td></tr>
+  <tr><td>チェックインのスクリーンショット、ひとこと（意見）、アプリの利用時間（秒）、端末モデル・Androidバージョン</td><td>チームメンバーのアプリをテストしてチェックインするとき</td><td>テストの実施確認、アプリの所有者へのフィードバック伝達</td></tr>
   <tr><td>「インストールできない」レポート（理由、メモ、スクリーンショット）</td><td>チームメンバーのアプリをインストールできず報告するとき</td><td>アプリの所有者へのインストール問題の通知</td></tr>
   <tr><td>チームメンバーのアプリのインストール有無</td><td>準備中・テスト中</td><td>端末内で<b>同じチームのメンバーのアプリ</b>がインストールされているかのみを確認し、その結果のみをサーバーに記録します。その他のアプリの一覧はサーバーに送信しません</td></tr>
   <tr><td>タネ（アプリ内ポイント）の残高・履歴、購入記録（購入日時、購入確認値）</td><td>タネの獲得・使用・購入時</td><td>タネの付与・保管、同じ決済での重複付与の防止</td></tr>
-  <tr><td>コミュニティの投稿、コメント、共感</td><td>開発者ラウンジへの投稿時</td><td>他の会員への表示</td></tr>
-  <tr><td>プッシュ通知トークン</td><td>アプリを開くとき</td><td>テスト開始、認証締切1時間前などの通知の送信</td></tr>
+  <tr><td>コミュニティの投稿、コメント、いいね</td><td>開発者ラウンジへの投稿時</td><td>他の会員への表示</td></tr>
+  <tr><td>プッシュ通知トークン</td><td>アプリを開くとき</td><td>テスト開始、チェックイン期限の1時間前などの通知の送信</td></tr>
   <tr><td>広告識別子（広告ID）、端末・アプリの利用情報</td><td>広告が表示されるとき</td><td>Google AdMob広告の表示と広告成果の測定</td></tr>
 </table>
-<p>認証スクリーンショット、意見、「インストールできない」レポートは<b>同じチームのメンバー</b>に表示されます。コミュニティの投稿とコメントは、公式テスターグループに参加した会員に表示されます。スクリーンショットに個人情報が含まれないようご注意ください。</p>
+<p>チェックインのスクリーンショット、意見、「インストールできない」レポートは<b>同じチームのメンバー</b>に表示されます。コミュニティの投稿とコメントは、公式テスターグループに参加した会員に表示されます。スクリーンショットに個人情報が含まれないようご注意ください。</p>
 <p>タネはGoogle Playの決済で購入します。カード番号などの決済情報はGoogleが処理し、本アプリは受け取りません。</p>
 
 <h2>2. 委託先と国外移転</h2>
 <table>
   <tr><th>提供先</th><th>内容</th><th>保管場所</th></tr>
-  <tr><td>Google LLC — Firebase Authentication、Realtime Database、Cloud Functions</td><td>アカウント、プロフィール、チーム・認証記録、タネ、コミュニティの保存と処理</td><td>シンガポール、韓国などのGoogleデータセンター</td></tr>
-  <tr><td>Google LLC — Cloud Storage for Firebase</td><td>認証スクリーンショット、レポートのスクリーンショット、アプリアイコンの保存</td><td>米国などのGoogleデータセンター</td></tr>
+  <tr><td>Google LLC — Firebase Authentication、Realtime Database、Cloud Functions</td><td>アカウント、プロフィール、チーム・チェックイン記録、タネ、コミュニティの保存と処理</td><td>シンガポール、韓国などのGoogleデータセンター</td></tr>
+  <tr><td>Google LLC — Cloud Storage for Firebase</td><td>チェックインのスクリーンショット、レポートのスクリーンショット、アプリアイコンの保存</td><td>米国などのGoogleデータセンター</td></tr>
   <tr><td>Google LLC — Firebase Cloud Messaging</td><td>プッシュ通知の送信</td><td>Googleデータセンター</td></tr>
   <tr><td>Google LLC — AdMob</td><td>広告の表示</td><td>Googleデータセンター</td></tr>
   <tr><td>Google LLC — Google Play決済</td><td>タネ購入の決済処理</td><td>Googleデータセンター</td></tr>
@@ -184,13 +184,13 @@
 <h2>3. 保管期間と削除</h2>
 <ul>
   <li>アカウント、プロフィール、登録したアプリ、タネと履歴、プッシュトークン、コミュニティの投稿・コメントは退会するまで保管し、退会するとすぐに削除します。残っているタネも失われます。</li>
-  <li>チーム記録（インストール・認証の記録、スクリーンショット、意見）はチームメンバーのテスト証跡でもあるため、チームのテスト終了後最長1年間保管したのち削除します。退会すると、お名前、スクリーンショット、意見はすぐに消去し、名前のない認証時刻と利用時間のみがこの期間残ります。</li>
+  <li>チーム記録（インストール・チェックインの記録、スクリーンショット、意見）はチームメンバーのテスト証跡でもあるため、チームのテスト終了後最長1年間保管したのち削除します。退会すると、お名前、スクリーンショット、意見はすぐに消去し、名前のないチェックイン時刻と利用時間のみがこの期間残ります。</li>
   <li>コミュニティの通報記録は運営者の確認中は保管し、通報者または通報された方が退会すると一緒に削除します。</li>
   <li><b>退会方法：</b>アプリ → マイページ → いちばん下のアカウント削除（詳細：<a href="delete.html#ja">アカウント削除のご案内</a>）。アプリを使えない場合は、下記のお問い合わせ先にご連絡いただければ削除します。</li>
 </ul>
 
 <h2>4. 通知と権限</h2>
-<p>テストの締切を逃さないよう、本アプリには通知の許可が必要です。写真は、認証スクリーンショットを選ぶ際にご自身で選んだものだけがアップロードされ、本アプリがフォトライブラリ全体を読み取ることはありません。位置情報、連絡先、カメラ、マイクの情報は収集しません。</p>
+<p>テストの締切を逃さないよう、本アプリには通知の許可が必要です。写真は、チェックインのスクリーンショットを選ぶ際にご自身で選んだものだけがアップロードされ、本アプリがフォトライブラリ全体を読み取ることはありません。位置情報、連絡先、カメラ、マイクの情報は収集しません。</p>
 
 <h2>5. 広告と利用者の選択</h2>
 <p>本アプリにはGoogle AdMob広告が表示されます。端末の設定の<b>Google → 広告</b>で広告IDをリセットまたは削除し、パーソナライズド広告を制限できます。欧州経済領域など同意が必要な地域の利用者には、初回起動時に同意画面が表示されます。</p>
@@ -223,23 +223,23 @@
   <tr><td>Correo electrónico, contraseña (almacenada cifrada)</td><td>Registro e inicio de sesión</td><td>Comprobación de la cuenta, verificación del correo, restablecimiento de contraseña</td></tr>
   <tr><td>Apodo, dirección de Gmail de tester</td><td>Al crear tu perfil</td><td>Mostrar tu nombre a los compañeros, guiarte para unirte al grupo oficial de testers</td></tr>
   <tr><td>Datos de la app registrada (nombre, nombre de paquete, descripción, icono), solicitudes de prueba</td><td>Al registrar o editar tu app</td><td>Permitir que los compañeros encuentren, instalen y prueben tu app</td></tr>
-  <tr><td>Registros de equipo, instalación y verificación, avisos y finalizaciones</td><td>Mientras participas en un equipo</td><td>Gestionar la prueba de 14 días y mostrar el progreso del equipo</td></tr>
-  <tr><td>Capturas de verificación, comentarios breves, tiempo de uso (segundos), modelo del dispositivo y versión de Android</td><td>Al probar y verificar la app de un compañero</td><td>Confirmar que la prueba se realizó, transmitir comentarios al propietario de la app</td></tr>
+  <tr><td>Registros de equipo, instalación y registro diario, advertencias y finalizaciones</td><td>Mientras participas en un equipo</td><td>Gestionar la prueba de 14 días y mostrar el progreso del equipo</td></tr>
+  <tr><td>Capturas del registro diario, comentarios breves, tiempo de uso (segundos), modelo del dispositivo y versión de Android</td><td>Al probar la app de un compañero y hacer el registro diario</td><td>Confirmar que la prueba se realizó, transmitir comentarios al propietario de la app</td></tr>
   <tr><td>Informes de «no se puede instalar» (motivo, nota, captura)</td><td>Al informar de que la app de un compañero no se instala</td><td>Avisar al propietario de la app del problema</td></tr>
   <tr><td>Si las apps de los compañeros están instaladas</td><td>Durante la preparación y la prueba</td><td>Se comprueba en tu dispositivo <b>solo para las apps de tus compañeros</b> y solo se registra ese resultado. Tu lista de otras apps nunca se envía</td></tr>
   <tr><td>Saldo e historial de Semillas (puntos de la app), registros de compra (hora, valor de verificación)</td><td>Al obtener, gastar o comprar Semillas</td><td>Otorgar y conservar Semillas, evitar entregas duplicadas</td></tr>
   <tr><td>Publicaciones, comentarios y «me gusta» de la comunidad</td><td>Al publicar en la Sala de desarrolladores</td><td>Mostrarlos a otros miembros</td></tr>
-  <tr><td>Token de notificaciones push</td><td>Al abrir la App</td><td>Enviar avisos como el inicio de la prueba o «queda 1 hora para verificar»</td></tr>
+  <tr><td>Token de notificaciones push</td><td>Al abrir la App</td><td>Enviar avisos como el inicio de la prueba o «queda 1 hora para el registro diario»</td></tr>
   <tr><td>ID de publicidad, información de uso del dispositivo y de la app</td><td>Cuando se muestran anuncios</td><td>Mostrar anuncios de Google AdMob y medir su rendimiento</td></tr>
 </table>
-<p>Las capturas de verificación, los comentarios y los informes de «no se puede instalar» son visibles para <b>tus compañeros de equipo</b>. Las publicaciones y los comentarios de la comunidad son visibles para los miembros del grupo oficial de testers. Asegúrate de que tus capturas no contengan datos personales.</p>
+<p>Las capturas del registro diario, los comentarios y los informes de «no se puede instalar» son visibles para <b>tus compañeros de equipo</b>. Las publicaciones y los comentarios de la comunidad son visibles para los miembros del grupo oficial de testers. Asegúrate de que tus capturas no contengan datos personales.</p>
 <p>Las Semillas se compran mediante la facturación de Google Play. Google gestiona los datos de pago, como los números de tarjeta; la App nunca los recibe.</p>
 
 <h2>2. Encargados del tratamiento y transferencias internacionales</h2>
 <table>
   <tr><th>Destinatario</th><th>Qué</th><th>Ubicación</th></tr>
-  <tr><td>Google LLC — Firebase Authentication, Realtime Database, Cloud Functions</td><td>Cuentas, perfiles, registros de equipo y verificación, Semillas, comunidad</td><td>Centros de datos de Google, incluidos Singapur y Corea del Sur</td></tr>
-  <tr><td>Google LLC — Cloud Storage for Firebase</td><td>Capturas de verificación, capturas de informes, iconos de apps</td><td>Centros de datos de Google, incluido Estados Unidos</td></tr>
+  <tr><td>Google LLC — Firebase Authentication, Realtime Database, Cloud Functions</td><td>Cuentas, perfiles, registros de equipo y registro diario, Semillas, comunidad</td><td>Centros de datos de Google, incluidos Singapur y Corea del Sur</td></tr>
+  <tr><td>Google LLC — Cloud Storage for Firebase</td><td>Capturas del registro diario, capturas de informes, iconos de apps</td><td>Centros de datos de Google, incluido Estados Unidos</td></tr>
   <tr><td>Google LLC — Firebase Cloud Messaging</td><td>Notificaciones push</td><td>Centros de datos de Google</td></tr>
   <tr><td>Google LLC — AdMob</td><td>Anuncios</td><td>Centros de datos de Google</td></tr>
   <tr><td>Google LLC — Facturación de Google Play</td><td>Compra de Semillas</td><td>Centros de datos de Google</td></tr>
@@ -249,9 +249,9 @@
 <h2>3. Conservación y eliminación</h2>
 <ul>
   <li>Tu cuenta, perfil, app registrada, Semillas e historial, tokens push y publicaciones y comentarios de la comunidad se conservan hasta que elimines tu cuenta y se borran de inmediato cuando lo hagas. Las Semillas restantes se pierden.</li>
-  <li>Los registros de equipo (instalación y verificación, capturas, comentarios) también sirven como prueba para tus compañeros, por lo que se conservan hasta 1 año después de terminar la prueba del equipo y luego se eliminan. Al eliminar tu cuenta, tu nombre, capturas y comentarios se borran de inmediato; solo quedan durante ese periodo las horas de verificación y los tiempos de uso anónimos.</li>
+  <li>Los registros de equipo (instalación y registro diario, capturas, comentarios) también sirven como prueba para tus compañeros, por lo que se conservan hasta 1 año después de terminar la prueba del equipo y luego se eliminan. Al eliminar tu cuenta, tu nombre, capturas y comentarios se borran de inmediato; solo quedan durante ese periodo las horas de registro diario y los tiempos de uso anónimos.</li>
   <li>Los registros de denuncias de la comunidad se conservan mientras el operador los revisa y se eliminan si la persona denunciante o denunciada elimina su cuenta.</li>
-  <li><b>Cómo eliminar tu cuenta:</b> App → Yo → Eliminar cuenta, al final de la pantalla. Consulta <a href="delete.html#es">eliminar tu cuenta</a>. Si no puedes usar la App, escríbenos y la eliminaremos por ti.</li>
+  <li><b>Cómo eliminar tu cuenta:</b> App → Perfil → Eliminar cuenta, al final de la pantalla. Consulta <a href="delete.html#es">eliminar tu cuenta</a>. Si no puedes usar la App, escríbenos y la eliminaremos por ti.</li>
 </ul>
 
 <h2>4. Notificaciones y permisos</h2>
